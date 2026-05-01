@@ -12,14 +12,14 @@ Given raw file bytes + filename + declared doc_type, it:
 import logging
 from pathlib import Path
 
-from tender_platform.models.document import (
+from models.document import (
     DocType,
     ExtractedDocument,
     FileFormat,
     PageResult,
 )
-from tender_platform.ingestion.pdf_parser import parse_pdf
-from tender_platform.ingestion.other_parsers import (
+from ingestion.pdf_parser import parse_pdf
+from ingestion.other_parsers import (
     parse_docx,
     parse_image,
     SUPPORTED_IMAGE_FORMATS,

@@ -11,10 +11,10 @@ sys.path.insert(0, "/home/claude")
 import pytest
 from PIL import Image, ImageDraw, ImageFont
 
-from tender_platform.ingestion.document_processor import DocumentProcessor
-from tender_platform.ingestion.other_parsers import parse_docx, parse_image
-from tender_platform.models.document import DocType, FileFormat
-from tender_platform.utils.image_preprocessing import preprocess_for_ocr
+from ingestion.document_processor import DocumentProcessor
+from ingestion.other_parsers import parse_docx, parse_image
+from models.document import DocType, FileFormat
+from utils.image_preprocessing import preprocess_for_ocr
 
 
 processor = DocumentProcessor()

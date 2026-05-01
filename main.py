@@ -16,8 +16,8 @@ from fastapi import FastAPI, File, Form, HTTPException, UploadFile
 from fastapi.responses import JSONResponse
 from pydantic import BaseModel
 
-from tender_platform.ingestion.document_processor import DocumentProcessor
-from tender_platform.models.document import DocType, ExtractedDocument
+from ingestion.document_processor import DocumentProcessor
+from models.document import DocType, ExtractedDocument
 
 logging.basicConfig(level=logging.INFO, format="%(levelname)s %(name)s: %(message)s")
 logger = logging.getLogger(__name__)

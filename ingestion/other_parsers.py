@@ -11,8 +11,8 @@ from PIL import Image
 from docx import Document
 from docx.table import Table
 
-from tender_platform.ingestion.ocr_engine import run_ocr
-from tender_platform.models.document import FileFormat, PageResult
+from ingestion.ocr_engine import run_ocr
+from models.document import FileFormat, PageResult
 
 logger = logging.getLogger(__name__)
 
